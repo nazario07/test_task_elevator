@@ -3,12 +3,12 @@ import model.Building;
 import java.util.Random;
 
 public class Main {
-    private static Random r = new Random();
+    private static Random random = new Random();
 
     public static void main(String[] args) {
 
-        Building building = new Building((r.nextInt(16) + 5)); // (0...15) +5 = 5... 20
-        System.out.println("START");
+        Building building = new Building((random.nextInt(16) + 5)); // (0...15) +5 = 5... 20
+        System.out.println("Go!");
         System.out.println(building);
         building.startCycle();
     }
